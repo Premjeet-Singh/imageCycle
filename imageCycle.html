@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Cycle</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- <style>
+
+
+</style> -->
+<script>
+window.addEventListener("load", function(){
+	var items_container = document.getElementById("items_container");
+	var thumbtimer, ti=0, dir="item_images/";
+	var obj1 = { name:"Pistol", pics:["p1.png","p2.png","p3.png"] };
+	var obj2 = { name:"Glasses", pics:["g1.png","g2.png","g3.png"] };
+	var obj3 = { name:"Box", pics:["b1.png","b2.png","b3.png","b4.png"] };
+	var obj4 = { name:"Baby", pics:["bb1.png","bb2.png","bb3.jpg","bb4.jpg"] };
+	var ary = [obj1,obj2,obj3,obj4];
+	for(var i=0; i < ary.length; i++){
+		var div = document.createElement("div");
+		var img = document.createElement("img");
+		var span = document.createElement("span");
+		div.className = "item";
+		img.oi = i;
+		img.src = dir + ary[i].pics[0];
+		// img.src = ary[i].pics[0];
+		span.innerHTML = ary[i].name;
+		items_container.appendChild(div);
+		div.appendChild(img);
+		div.appendChild(span);
+		img.addEventListener("mouseover", function(event){
+		    thumbtimer = setInterval(function(){
+			    ti++;
+			    if(ti == ary[event.target.oi].pics.length){
+				    ti = 0;
+			    }
+			    event.target.src = dir + ary[event.target.oi].pics[ti];
+		    }, 700);
+        });
+		img.addEventListener("mouseout", function(event){
+			clearInterval(thumbtimer);
+			ti = 0;
+			event.target.src = dir + ary[event.target.oi].pics[ti];
+		});
+	}
+});
+</script>
+</head>
+<body>
+<h1>Image Cycle</h1>
+<section>
+<div id="items_container"></div>
+</section>
+</body>
+</html>

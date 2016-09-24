@@ -1,0 +1,36 @@
+section{
+	padding-top: 30px;
+	padding-left: 16px;
+	margin: 70px auto;
+	width: 490px;
+	height: 480px;
+	background-color: gray;
+	/*overflow: hidden;*/
+}
+.item{
+	float: left;
+	background-color: #75C7B2;
+	border: #AAA 1px solid;
+	padding: 10px;
+	margin: 10px 15px;
+	margin-bottom: 10px;
+}
+.item > img{
+	width: 180px;
+	height: 140px;
+	background-color: lightyellow;
+	border: #666 1px solid;
+    cursor: pointer;
+}
+.item > span{
+	display: block;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+}
+body{
+	background:#97CCDE;
+}
+h1{
+	text-align: center;
+}
