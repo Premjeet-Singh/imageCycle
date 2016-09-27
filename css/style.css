@@ -1,10 +1,10 @@
 section{
 	padding-top: 30px;
 	padding-left: 16px;
-	margin: 70px auto;
+	margin: -10px auto;
 	width: 490px;
 	height: 480px;
-	background-color: gray;
+	background-color: #70615C;
 	/*overflow: hidden;*/
 }
 .item{
@@ -18,7 +18,7 @@ section{
 .item > img{
 	width: 180px;
 	height: 140px;
-	background-color: lightyellow;
+	background-color: #E9FAE3;
 	border: #666 1px solid;
     cursor: pointer;
 }
@@ -32,5 +32,10 @@ body{
 	background:#97CCDE;
 }
 h1{
+	width: 477px;
+	margin: 30px auto;
+	padding: 15px;
+	background: #70615C;
 	text-align: center;
+	color: #DEDBD9;
 }
