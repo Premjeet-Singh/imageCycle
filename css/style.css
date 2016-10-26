@@ -1,3 +1,10 @@
+.wrap{
+	background: #08382B;
+	width:50%;
+	margin: 30px auto;
+	padding: 10px;
+	height: 660px;
+}
 section{
 	padding-top: 30px;
 	padding-left: 16px;
